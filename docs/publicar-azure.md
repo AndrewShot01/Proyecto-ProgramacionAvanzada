@@ -1,5 +1,7 @@
 # Publicación en Azure for Students
 
+**Actividad aplazada:** el estudiante decidió concentrarse ahora en el primer entregable y retomar Azure junto con el segundo. Esta es una decisión de planificación; el enunciado incluye Azure como condición general y no indica expresamente que pueda dejarse para esa fecha. La siguiente guía se conserva para cuando se retome la publicación.
+
 La base PostgreSQL ya funciona en el servidor del profesor. Falta crear el App Service que ejecutará la aplicación web. La cuenta de Azure y su suscripción deben estar disponibles para continuar; todavía no se ha creado ningún recurso de Azure para este proyecto.
 
 ## Crear el servicio

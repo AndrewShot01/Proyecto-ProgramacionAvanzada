@@ -8,6 +8,8 @@ Aplicación C# con ASP.NET Core MVC (.NET 10), Razor, jQuery y Entity Framework 
 
 **Validación:** 39 pruebas locales aprobadas y [CI aprobada en GitHub Actions](https://github.com/AndrewShot01/Proyecto-ProgramacionAvanzada/actions/runs/42515482001), incluida la generación del paquete de publicación.
 
+**Alcance actual:** se trabaja en el primer entregable y la publicación en Azure se deja para una fase posterior, prevista junto con el segundo entregable. El enunciado exige Azure y CI/CD como condiciones generales, pero no asigna expresamente su fecha a una entrega; posponer la publicación no equivale a una autorización del profesor. Para esta revisión se demuestra la aplicación local conectada a PostgreSQL en la nube.
+
 ## Contenido
 
 - Crear, consultar, buscar por nombre, editar y eliminar sucursales, clientes y productos.
@@ -55,7 +57,7 @@ CI crea su propio PostgreSQL 17, instala el esquema, compila, ejecuta pruebas y 
 
 ## Publicar en Azure for Students
 
-La publicación requiere una suscripción y un App Service del estudiante. Esos recursos todavía deben configurarse en la cuenta correspondiente.
+Esta actividad queda pendiente por decisión del estudiante mientras se completa la revisión del primer entregable. La publicación requiere una suscripción y un App Service del estudiante. Esos recursos todavía deben configurarse en la cuenta correspondiente.
 
 1. Crear un App Service que ejecute .NET 10; habilitar HTTPS. Para una aplicación administrativa, restringir el acceso con App Service Authentication antes de exponerla públicamente.
 2. Configurar `ConnectionStrings__Pulperia` como variable de entorno del App Service, con la conexión del profesor y `SSL Mode=VerifyFull`.

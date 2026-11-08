@@ -18,8 +18,10 @@ La implementación se instaló y verificó en el esquema `user_07` de `advanced_
 | Mantenimiento clientes | Alta, consulta, búsqueda, cambio y borrado | Prueba HTTP y pantalla 03 |
 | Mantenimiento productos | CRUD, reglas de reserva, JSONB y vista previa jQuery | Prueba HTTP y pantallas 04–05 |
 | Integración en base del profesor | Instalada y verificada con TLS | verificacion-nube.txt, http-nube.json y crud-nube.json |
-| CI/CD | CI aprobada en GitHub; despliegue Azure pendiente | .github/workflows y evidencias/verificacion-ci.json |
-| Publicación Azure | Pendiente de recursos y credenciales de despliegue | README |
+
+### Condiciones generales del proyecto
+
+Azure y CI/CD aparecen en las condiciones generales del enunciado, sin una entrega específica asignada. La CI ya está aprobada; el despliegue queda pendiente para una fase posterior, prevista junto con el segundo entregable por decisión del estudiante. Debe confirmarse con el profesor que la primera demostración puede realizarse localmente, conectada a la base PostgreSQL en la nube. No se considera completada la condición de publicación.
 
 ## Pruebas reproducibles
 
@@ -68,7 +70,7 @@ Los errores de negocio se presentan en español. Las restricciones se ejecutan t
 
 ## Pendientes y segundo entregable
 
-La base del profesor ya tiene las tablas, datos, vistas y triggers, y la conexión local está configurada fuera de Git. El código está en el repositorio indicado. Para cerrar la entrega en el ambiente solicitado falta publicar la aplicación en Azure. La aplicación aún se ejecuta localmente aunque sus datos estén en la nube.
+La base del profesor ya tiene las tablas, datos, vistas y triggers, y la conexión local está configurada fuera de Git. El código está en el repositorio indicado. Los elementos enumerados específicamente para el primer entregable están implementados y documentados. La publicación en Azure queda fuera del trabajo activo por decisión del estudiante y continúa pendiente como condición general del proyecto. La aplicación se demuestra localmente con los datos en la nube; el enunciado no garantiza que pueda aplazarse la publicación hasta la segunda entrega.
 
 Para el segundo entregable faltan los formularios de ingreso de inventario, reserva y compra, el proceso calendarizado que cancela reservas vencidas, consultas maestro-detalle, circuitos con Polly y notificaciones SignalR. No existe cancelación manual en la interfaz. La separación de permisos del rol calendarizado debe configurarse con ese proceso. El TODO de penalización necesita una política del profesor; no se incorporó una regla inventada.
 
