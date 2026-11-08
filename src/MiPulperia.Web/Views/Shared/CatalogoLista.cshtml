@@ -1,0 +1,8 @@
+@model ListaCatalogo
+@{ ViewData["Title"] = Model.Titulo; }
+<div class="page-heading"><div><p class="eyebrow">CATÁLOGOS DEL BARRIO</p><h1>@Model.Titulo</h1><p class="muted">@Model.Descripcion</p></div><a class="button" asp-action="Create">+ Nuevo registro</a></div>
+<section class="panel"><div class="table-toolbar"><form method="get" class="search-form"><label class="sr-only" for="q">Buscar por nombre</label><input id="q" name="q" value="@Model.Busqueda" placeholder="Buscar por nombre…" maxlength="120" /><button class="button secondary" type="submit">Buscar</button>@if (!string.IsNullOrEmpty(Model.Busqueda)) { <a asp-action="Index">Limpiar</a> }</form><span class="count">@Model.Filas.Count registro(s)</span></div>
+<div class="table-scroll"><table><thead><tr>@foreach (var col in Model.Columnas) { <th>@col</th> }<th class="actions-header">Acciones</th></tr></thead><tbody>
+@foreach (var row in Model.Filas) { <tr>@foreach (var cell in row.Celdas) { <td>@cell</td> }<td class="actions"><a asp-action="Details" asp-route-id="@row.Id">Ver</a><a asp-action="Edit" asp-route-id="@row.Id">Editar</a><a class="danger-link" asp-action="Delete" asp-route-id="@row.Id">Eliminar</a></td></tr> }
+@if (Model.Filas.Count == 0) { <tr><td colspan="@(Model.Columnas.Length + 1)" class="empty">No hay registros que coincidan con la búsqueda.</td></tr> }
+</tbody></table></div></section>

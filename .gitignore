@@ -426,3 +426,10 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# Evidencia del primer entregable, sin secretos ni artefactos de compilación.
+!docs/evidencias/resultados/*.trx
+appsettings.Local.json
+*.local.json
+.env
+.env.*

@@ -1,0 +1,47 @@
+name: Validar primer entregable
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: pulperia_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready --health-interval 10s
+          --health-timeout 5s --health-retries 5
+    env:
+      PGPASSWORD: postgres
+      PULPERIA_TEST_CONNECTION: Host=localhost;Port=5432;Database=pulperia_test;Username=postgres;Password=postgres
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Crear base de prueba
+        run: |
+          psql -h localhost -U postgres -d pulperia_test -v ON_ERROR_STOP=1 -c 'CREATE SCHEMA user_07'
+          psql -h localhost -U postgres -d pulperia_test -v ON_ERROR_STOP=1 -f database/001_estructura.sql -f database/002_datos_demo.sql
+      - run: dotnet restore
+      - run: dotnet build --no-restore --configuration Release
+      - run: dotnet test --no-build --configuration Release --logger trx --results-directory TestResults
+      - run: dotnet publish src/MiPulperia.Web --no-build --configuration Release --output publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: resultados-pruebas
+          path: TestResults
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pulperia-web
+          path: publish

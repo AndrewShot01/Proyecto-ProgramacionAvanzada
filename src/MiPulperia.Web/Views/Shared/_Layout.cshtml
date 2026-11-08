@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] · Mi Pulpería de Barrio</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<aside class="sidebar">
+    <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-icon">mp.</span><span>Mi Pulpería<small>DE BARRIO</small></span></a>
+    <p class="nav-label">ADMINISTRACIÓN</p>
+    <nav aria-label="Navegación principal">
+    @foreach (var link in new[] { ("Home", "Index", "Inicio", "⌂"), ("Sucursales", "Index", "Sucursales", "01"), ("Clientes", "Index", "Clientes", "02"), ("Productos", "Index", "Productos", "03"), ("Consultas", "Existencias", "Existencias", "04"), ("Consultas", "Reservas", "Reservas", "05") })
+    {
+        var active = ViewContext.RouteData.Values["controller"]?.ToString() == link.Item1 && (link.Item1 != "Consultas" || ViewContext.RouteData.Values["action"]?.ToString() == link.Item2);
+        <a class="@(active ? "active" : "")" asp-controller="@link.Item1" asp-action="@link.Item2"><span>@link.Item4</span>@link.Item3</a>
+    }
+    </nav>
+    <div class="sidebar-bottom"><span class="status-dot"></span> Hecho para nuestro barrio<small>Gestión de tiendas e inventario</small></div>
+</aside>
+<div class="workspace"><header class="topbar"><span>MI PULPERÍA DE BARRIO</span><span class="topbar-tag">Administración</span></header>
+<main id="contenido">
+    @if (TempData["Exito"] is string exito) { <div class="alert success" role="status">@exito</div> }
+    @RenderBody()
+</main><footer>Mi Pulpería de Barrio <span>Todo en su lugar.</span></footer></div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body></html>

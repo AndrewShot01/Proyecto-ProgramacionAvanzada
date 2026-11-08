@@ -1,0 +1,11 @@
+@model Cliente
+@{ var detalle = ViewData["Accion"]?.ToString() == "Detalle"; }
+<a class="back-link" asp-action="Index">← Volver al listado</a>
+<div class="page-heading"><div><p class="eyebrow">CATÁLOGOS DEL BARRIO</p><h1>@ViewData["Accion"] registro</h1><p class="muted">@ViewData["Catalogo"] · Los campos son obligatorios.</p></div></div>
+<section class="panel form-panel"><form method="post" data-maintenance><input asp-for="Id" type="hidden" /><input asp-for="Version" type="hidden" /><div asp-validation-summary="All" class="validation" role="alert"></div><fieldset disabled="@detalle"><div class="form-grid">
+<div class="field"><label asp-for="Nombre"></label><input asp-for="Nombre" type="text"  /><span asp-validation-for="Nombre"></span></div>
+<div class="field"><label asp-for="Identificacion"></label><input asp-for="Identificacion" type="text"  /><span asp-validation-for="Identificacion"></span></div>
+<div class="field"><label asp-for="Correo"></label><input asp-for="Correo" type="email"  /><span asp-validation-for="Correo"></span></div>
+<div class="field"><label asp-for="Telefono"></label><input asp-for="Telefono" type="tel"  /><span asp-validation-for="Telefono"></span></div>
+</div></fieldset><div class="form-actions">@if (!detalle) { <button class="button" type="submit">Guardar registro</button> } else { <a class="button" asp-action="Edit" asp-route-id="@Model.Id">Editar registro</a> }<a class="button secondary" asp-action="Index">Volver al listado</a></div></form></section>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
