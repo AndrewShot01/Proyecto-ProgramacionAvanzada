@@ -1,0 +1,13 @@
+BEGIN
+DO
+              prueba              | resultado 
+----------------------------------+-----------
+ Existencias sin saldos negativos | t
+(1 row)
+
+ROLLBACK
+psql:database/004_pruebas_integridad.sql:41: NOTICE:  OK: ingreso inmutable
+psql:database/004_pruebas_integridad.sql:41: NOTICE:  OK: reserva no eliminable
+psql:database/004_pruebas_integridad.sql:41: NOTICE:  OK: solamente puede cambiar el estado
+psql:database/004_pruebas_integridad.sql:41: NOTICE:  OK: referencias protegidas
+psql:database/004_pruebas_integridad.sql:41: NOTICE:  OK: atributos deben ser objeto JSON

@@ -1,0 +1,23 @@
+[
+  {
+    "catalogo": "Sucursales",
+    "alta": "correcta",
+    "edicion": "correcta",
+    "borrado": "correcto",
+    "datosTemporales": "eliminados"
+  },
+  {
+    "catalogo": "Clientes",
+    "alta": "correcta",
+    "edicion": "correcta",
+    "borrado": "correcto",
+    "datosTemporales": "eliminados"
+  },
+  {
+    "catalogo": "Productos",
+    "alta": "correcta",
+    "edicion": "correcta",
+    "borrado": "correcto",
+    "datosTemporales": "eliminados"
+  }
+]

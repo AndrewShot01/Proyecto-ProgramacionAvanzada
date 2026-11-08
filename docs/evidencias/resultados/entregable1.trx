@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="abe399cf-0934-4626-be15-422e6356fca2" name="andre@-ANDRE- 2026-11-08 13:27:39" runUser="-ANDRE-\andre" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-11-08T13:27:39.2717881-06:00" queuing="2026-11-08T13:27:39.2717883-06:00" start="2026-11-08T13:27:36.6926932-06:00" finish="2026-11-08T13:27:42.7001830-06:00" />
+  <TestSettings name="default" id="eda9f843-330d-4f9d-98a9-c9e6b99c1526">
+    <Deployment runDeploymentRoot="andre_-ANDRE-_2026-11-08_13_27_39" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="a3c56412-7ec2-45fe-84af-52bc0432eb4b" testId="938efd43-c19c-da10-66bb-74b274af0dbc" testName="MiPulperia.Tests.DatabaseTests.IngresoReservaCompraYVistasConcuerdan" computerName="-ANDRE-" duration="00:00:00.0684143" startTime="2026-11-08T13:27:39.1405033-06:00" endTime="2026-11-08T13:27:39.2090368-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3c56412-7ec2-45fe-84af-52bc0432eb4b" />
+    <UnitTestResult executionId="7359c157-a9a4-4f79-b1b0-8fde9b7e0610" testId="e415ca24-4ad7-dab3-4dc6-0f6e77fe1134" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET cantidad=cantidad+1&quot;···)" computerName="-ANDRE-" duration="00:00:00.0014554" startTime="2026-11-08T13:27:39.2442096-06:00" endTime="2026-11-08T13:27:39.2442559-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7359c157-a9a4-4f79-b1b0-8fde9b7e0610" />
+    <UnitTestResult executionId="5b47ec75-f995-4de7-b5d5-df48d3977f18" testId="06bd6966-2ccc-0f87-8c31-7f1180f3c716" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_reservas&quot;)" computerName="-ANDRE-" duration="00:00:00.0052377" startTime="2026-11-08T13:27:39.1253056-06:00" endTime="2026-11-08T13:27:39.1308117-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b47ec75-f995-4de7-b5d5-df48d3977f18" />
+    <UnitTestResult executionId="f45d41e5-527d-434e-8556-c245060505e4" testId="905aa841-0c3c-a30f-4dec-5775651c2d13" testName="MiPulperia.Tests.WebTests.PostSinAntiforgerySeRechaza" computerName="-ANDRE-" duration="00:00:00.0145599" startTime="2026-11-08T13:27:41.7227722-06:00" endTime="2026-11-08T13:27:41.7366754-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f45d41e5-527d-434e-8556-c245060505e4" />
+    <UnitTestResult executionId="413d3881-34e3-4b53-801e-b34ece10685a" testId="6461df8e-385d-2f8b-cf96-d421c1e57830" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Sucursales&quot;)" computerName="-ANDRE-" duration="00:00:02.0488063" startTime="2026-11-08T13:27:39.2877213-06:00" endTime="2026-11-08T13:27:41.3368545-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="413d3881-34e3-4b53-801e-b34ece10685a" />
+    <UnitTestResult executionId="32d1f63f-4063-4244-88f7-b9be631f447f" testId="f71a0805-1fa3-6162-8d09-e260222de81c" testName="MiPulperia.Tests.DatabaseTests.RestriccionesDeCatalogosYReferencias" computerName="-ANDRE-" duration="00:00:00.0103866" startTime="2026-11-08T13:27:39.2715169-06:00" endTime="2026-11-08T13:27:39.2821476-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32d1f63f-4063-4244-88f7-b9be631f447f" />
+    <UnitTestResult executionId="f30763be-32d5-4eda-b051-83130c064f7e" testId="88b478e7-472c-38f1-d026-fe76723c121e" testName="MiPulperia.Tests.DatabaseTests.MinimoDeExistenciasNoPuedeReservarse" computerName="-ANDRE-" duration="00:00:00.0028638" startTime="2026-11-08T13:27:39.2445399-06:00" endTime="2026-11-08T13:27:39.2445832-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f30763be-32d5-4eda-b051-83130c064f7e" />
+    <UnitTestResult executionId="e954465a-8b09-4694-a0ab-4743a26bf87c" testId="d1f741a5-97ad-8074-c351-c25799bce2b7" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_ingresos SET cantidad=cantidad+1&quot;)" computerName="-ANDRE-" duration="00:00:00.0012105" startTime="2026-11-08T13:27:39.2437369-06:00" endTime="2026-11-08T13:27:39.2438133-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e954465a-8b09-4694-a0ab-4743a26bf87c" />
+    <UnitTestResult executionId="40dc236c-8458-4380-910c-236bf19a9cc1" testId="e52dd599-c4a7-a551-b194-ab4e7841ab75" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Consultas/Reservas&quot;)" computerName="-ANDRE-" duration="00:00:00.0467725" startTime="2026-11-08T13:27:41.5938869-06:00" endTime="2026-11-08T13:27:41.6406996-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40dc236c-8458-4380-910c-236bf19a9cc1" />
+    <UnitTestResult executionId="88cec2c5-a647-4e10-b6f4-d73c55f7eca1" testId="4da15448-b786-7597-c79c-6d78d91506d9" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_ingresos&quot;)" computerName="-ANDRE-" duration="00:00:00.0054417" startTime="2026-11-08T13:27:39.1226203-06:00" endTime="2026-11-08T13:27:39.1251762-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88cec2c5-a647-4e10-b6f4-d73c55f7eca1" />
+    <UnitTestResult executionId="0e3bccd6-478c-4381-a330-36dccfc5d2e2" testId="3f683e19-93ed-fe3e-2c16-35f697362258" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET estado='RESERVADO' &quot;···)" computerName="-ANDRE-" duration="00:00:00.0011148" startTime="2026-11-08T13:27:39.2434373-06:00" endTime="2026-11-08T13:27:39.2434878-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e3bccd6-478c-4381-a330-36dccfc5d2e2" />
+    <UnitTestResult executionId="74013302-bc72-40c9-8d35-c41c1e184616" testId="befce92e-495f-a64d-8207-8ccac5d20dbd" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_inventarios&quot;)" computerName="-ANDRE-" duration="00:00:00.0049300" startTime="2026-11-08T13:27:39.1220498-06:00" endTime="2026-11-08T13:27:39.1221296-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74013302-bc72-40c9-8d35-c41c1e184616" />
+    <UnitTestResult executionId="a0095745-36d3-4c71-b195-107b7c85f59e" testId="47f95586-16a4-9ace-ced9-f29922b7269a" testName="MiPulperia.Tests.DatabaseTests.VencimientoDevuelveStockYQuedaInmutable" computerName="-ANDRE-" duration="00:00:00.0382963" startTime="2026-11-08T13:27:39.2460726-06:00" endTime="2026-11-08T13:27:39.2712699-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0095745-36d3-4c71-b195-107b7c85f59e" />
+    <UnitTestResult executionId="6301b092-def6-4bbe-a688-45f6fd414c2a" testId="25231ce9-08b0-2248-216b-3b24be112c54" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_productos&quot;)" computerName="-ANDRE-" duration="00:00:00.0032403" startTime="2026-11-08T13:27:39.1309327-06:00" endTime="2026-11-08T13:27:39.1344416-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6301b092-def6-4bbe-a688-45f6fd414c2a" />
+    <UnitTestResult executionId="67d4cc5c-93cf-4ebc-9d8e-2c5aae6734d4" testId="f2f412de-cb82-50c5-8456-78f654bde0e8" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;TRUNCATE user_07.mp_reservas&quot;)" computerName="-ANDRE-" duration="00:00:00.0013551" startTime="2026-11-08T13:27:39.2439395-06:00" endTime="2026-11-08T13:27:39.2439860-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67d4cc5c-93cf-4ebc-9d8e-2c5aae6734d4" />
+    <UnitTestResult executionId="95c65ec8-739d-484e-84a5-5b793d521fe0" testId="dbe77a7f-32a2-ed82-2653-37c6d7cfe498" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Clientes&quot;)" computerName="-ANDRE-" duration="00:00:00.0378398" startTime="2026-11-08T13:27:41.6408887-06:00" endTime="2026-11-08T13:27:41.6789384-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95c65ec8-739d-484e-84a5-5b793d521fe0" />
+    <UnitTestResult executionId="200dd4a6-3d2b-466d-b297-b87105ba5f5c" testId="e536c768-1f9e-a6ec-3385-ae7762960329" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/&quot;)" computerName="-ANDRE-" duration="00:00:00.1391131" startTime="2026-11-08T13:27:41.4543196-06:00" endTime="2026-11-08T13:27:41.5936676-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="200dd4a6-3d2b-466d-b297-b87105ba5f5c" />
+    <UnitTestResult executionId="313a76d7-2f77-4281-8f01-ee5838ea2008" testId="f2b73649-6af5-07f7-2e0f-fc3da001254c" testName="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Productos&quot;)" computerName="-ANDRE-" duration="00:00:00.1034119" startTime="2026-11-08T13:27:42.2978369-06:00" endTime="2026-11-08T13:27:42.4015352-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="313a76d7-2f77-4281-8f01-ee5838ea2008" />
+    <UnitTestResult executionId="04170796-bf64-4d30-9afe-332c21276f15" testId="b1a07264-54ba-68b1-41fd-910a6cb55dc4" testName="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;\\&quot;)" computerName="-ANDRE-" duration="00:00:00.0194901" startTime="2026-11-08T13:27:41.9404086-06:00" endTime="2026-11-08T13:27:41.9601243-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04170796-bf64-4d30-9afe-332c21276f15" />
+    <UnitTestResult executionId="09c4d3cd-0b00-4f2a-a5cf-e557fe90ac01" testId="927d51f9-581b-b165-4655-621b1dbd8265" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Consultas/Existencias&quot;)" computerName="-ANDRE-" duration="00:00:00.0238250" startTime="2026-11-08T13:27:41.6791346-06:00" endTime="2026-11-08T13:27:41.7030585-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09c4d3cd-0b00-4f2a-a5cf-e557fe90ac01" />
+    <UnitTestResult executionId="517b73fe-a51c-40a9-963f-0d5d99f2552b" testId="cc9a31e5-43c3-8459-f25c-d4151ce4c179" testName="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;_&quot;)" computerName="-ANDRE-" duration="00:00:00.0046200" startTime="2026-11-08T13:27:41.9603779-06:00" endTime="2026-11-08T13:27:41.9650059-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="517b73fe-a51c-40a9-963f-0d5d99f2552b" />
+    <UnitTestResult executionId="33e09af4-c065-461c-945e-bd53ee8b15a2" testId="2526fbad-5fb3-06c2-9dc6-9acc83c8a407" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;TRUNCATE user_07.mp_ingresos&quot;)" computerName="-ANDRE-" duration="00:00:00.0020998" startTime="2026-11-08T13:27:39.2435891-06:00" endTime="2026-11-08T13:27:39.2436350-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33e09af4-c065-461c-945e-bd53ee8b15a2" />
+    <UnitTestResult executionId="b1420819-c2ca-4121-969b-d4f28996812b" testId="80f0819a-bd23-3258-fcef-80f98dc8c69a" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Sucursales/Create&quot;)" computerName="-ANDRE-" duration="00:00:00.0233120" startTime="2026-11-08T13:27:41.4305666-06:00" endTime="2026-11-08T13:27:41.4540807-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1420819-c2ca-4121-969b-d4f28996812b" />
+    <UnitTestResult executionId="510c39c8-8739-4d2f-bc10-e4e6672761fc" testId="40ca7b5a-4f2b-092e-09ae-e9beb5c38899" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;DELETE FROM user_07.mp_reservas&quot;)" computerName="-ANDRE-" duration="00:00:00.0020731" startTime="2026-11-08T13:27:39.2092483-06:00" endTime="2026-11-08T13:27:39.2115251-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="510c39c8-8739-4d2f-bc10-e4e6672761fc" />
+    <UnitTestResult executionId="031c1e2e-f873-4689-93c3-2372ad214a9c" testId="056c611a-f900-b717-d7fb-e4b7517c8a5a" testName="MiPulperia.Tests.WebTests.JsonInvalidoNoSeGuarda" computerName="-ANDRE-" duration="00:00:00.0225877" startTime="2026-11-08T13:27:42.1677210-06:00" endTime="2026-11-08T13:27:42.1904720-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="031c1e2e-f873-4689-93c3-2372ad214a9c" />
+    <UnitTestResult executionId="ef17e9fe-9fa4-458b-b0e4-abdb129da23e" testId="51c14dec-a181-e64a-1bc2-4631c885bc19" testName="MiPulperia.Tests.WebTests.BorradoConRelacionesMuestraError" computerName="-ANDRE-" duration="00:00:00.2020793" startTime="2026-11-08T13:27:41.9652196-06:00" endTime="2026-11-08T13:27:42.1674819-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef17e9fe-9fa4-458b-b0e4-abdb129da23e" />
+    <UnitTestResult executionId="82280c25-c924-44ec-8da0-61971b81b233" testId="1e14f051-f37d-544b-2681-437a0065d0d9" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Productos/Create&quot;)" computerName="-ANDRE-" duration="00:00:00.0607852" startTime="2026-11-08T13:27:41.3370461-06:00" endTime="2026-11-08T13:27:41.3979676-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82280c25-c924-44ec-8da0-61971b81b233" />
+    <UnitTestResult executionId="2f6e23d2-b6f3-4bcb-9155-29f92ebf7af6" testId="9d117dfc-ee91-9c41-da5f-c4e49de3bb93" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Clientes/Create&quot;)" computerName="-ANDRE-" duration="00:00:00.0320687" startTime="2026-11-08T13:27:41.3981694-06:00" endTime="2026-11-08T13:27:41.4303556-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f6e23d2-b6f3-4bcb-9155-29f92ebf7af6" />
+    <UnitTestResult executionId="d088eeb3-7113-4735-aa53-d0cbc0b3d39c" testId="58a06751-2f53-17e6-a5dd-aeec2339ddf6" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET estado='CANCELADO' &quot;···)" computerName="-ANDRE-" duration="00:00:00.0014556" startTime="2026-11-08T13:27:39.2116470-06:00" endTime="2026-11-08T13:27:39.2132983-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d088eeb3-7113-4735-aa53-d0cbc0b3d39c" />
+    <UnitTestResult executionId="0c73d93c-d59d-42cd-a8f4-0d03ac03b2f5" testId="ade47dda-e024-7ff5-62a0-f7462b81c446" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_clientes&quot;)" computerName="-ANDRE-" duration="00:00:00.0040576" startTime="2026-11-08T13:27:39.1345562-06:00" endTime="2026-11-08T13:27:39.1389337-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c73d93c-d59d-42cd-a8f4-0d03ac03b2f5" />
+    <UnitTestResult executionId="ae402fdb-9c7c-4223-891d-ec27d129c971" testId="35c5c34b-2491-bbdb-4c3f-d820d99c04c3" testName="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_sucursales&quot;)" computerName="-ANDRE-" duration="00:00:00.1391804" startTime="2026-11-08T13:27:38.7684809-06:00" endTime="2026-11-08T13:27:39.1125184-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae402fdb-9c7c-4223-891d-ec27d129c971" />
+    <UnitTestResult executionId="a486d070-2727-4bad-9c7e-41368cd2b8f5" testId="42e518d6-f227-9df1-3621-d091600b41e1" testName="MiPulperia.Tests.DatabaseTests.LimiteAcumuladoIncluyeOtrasSucursales" computerName="-ANDRE-" duration="00:00:00.0030160" startTime="2026-11-08T13:27:39.2443676-06:00" endTime="2026-11-08T13:27:39.2444230-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a486d070-2727-4bad-9c7e-41368cd2b8f5" />
+    <UnitTestResult executionId="bcf3266c-5c4d-4962-8499-efcc0a31e62c" testId="d3dbb41f-ff89-aeaf-5459-d6fce1822a69" testName="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;%&quot;)" computerName="-ANDRE-" duration="00:00:00.2031217" startTime="2026-11-08T13:27:41.7369218-06:00" endTime="2026-11-08T13:27:41.9402353-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcf3266c-5c4d-4962-8499-efcc0a31e62c" />
+    <UnitTestResult executionId="b86dd00b-d1d0-4cf4-a06b-160b2763f646" testId="38e62ed6-7b5c-379d-18a0-447e291d67c0" testName="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Sucursales&quot;)" computerName="-ANDRE-" duration="00:00:00.0766709" startTime="2026-11-08T13:27:42.4017563-06:00" endTime="2026-11-08T13:27:42.4785370-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b86dd00b-d1d0-4cf4-a06b-160b2763f646" />
+    <UnitTestResult executionId="952d8edc-7ae4-4525-8e69-442db7143f33" testId="115cc30c-5dbf-c415-85f7-ea225c7ef7bb" testName="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Clientes&quot;)" computerName="-ANDRE-" duration="00:00:00.1068006" startTime="2026-11-08T13:27:42.1906982-06:00" endTime="2026-11-08T13:27:42.2976845-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="952d8edc-7ae4-4525-8e69-442db7143f33" />
+    <UnitTestResult executionId="625bda55-48ba-44ca-a4fb-4477c70a51da" testId="053cb877-8adf-e357-e8d0-f051661c0d0a" testName="MiPulperia.Tests.ConcurrencyTests.DosReservasSimultaneasNoSobrevenden" computerName="-ANDRE-" duration="00:00:00.1496328" startTime="2026-11-08T13:27:42.4835926-06:00" endTime="2026-11-08T13:27:42.6324455-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="625bda55-48ba-44ca-a4fb-4477c70a51da" />
+    <UnitTestResult executionId="e11613a0-c0a0-4c32-878e-44ef62a216af" testId="62eb5d5d-2b4d-4e37-0744-484e2c026b33" testName="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Productos&quot;)" computerName="-ANDRE-" duration="00:00:00.0182169" startTime="2026-11-08T13:27:41.7032630-06:00" endTime="2026-11-08T13:27:41.7216321-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e11613a0-c0a0-4c32-878e-44ef62a216af" />
+    <UnitTestResult executionId="f7b10fb4-9119-44ed-898e-f0bb17d3c37e" testId="300208b6-a99a-c778-ef69-2a0a7af5ed19" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_inventarios SET producto_id=prod&quot;···)" computerName="-ANDRE-" duration="00:00:00.0015454" startTime="2026-11-08T13:27:39.2430306-06:00" endTime="2026-11-08T13:27:39.2431403-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7b10fb4-9119-44ed-898e-f0bb17d3c37e" />
+    <UnitTestResult executionId="838c1be0-1aad-4585-a3c1-225507d55ce1" testId="5dcb3a53-5817-b437-261e-da1a582388c3" testName="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;DELETE FROM user_07.mp_ingresos&quot;)" computerName="-ANDRE-" duration="00:00:00.0011689" startTime="2026-11-08T13:27:39.2440806-06:00" endTime="2026-11-08T13:27:39.2441286-06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="838c1be0-1aad-4585-a3c1-225507d55ce1" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET estado='CANCELADO' &quot;···)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="58a06751-2f53-17e6-a5dd-aeec2339ddf6">
+      <Execution id="d088eeb3-7113-4735-aa53-d0cbc0b3d39c" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Consultas/Existencias&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="927d51f9-581b-b165-4655-621b1dbd8265">
+      <Execution id="09c4d3cd-0b00-4f2a-a5cf-e557fe90ac01" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;%&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="d3dbb41f-ff89-aeaf-5459-d6fce1822a69">
+      <Execution id="bcf3266c-5c4d-4962-8499-efcc0a31e62c" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="BusquedaTrataComodinesComoTexto" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;_&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="cc9a31e5-43c3-8459-f25c-d4151ce4c179">
+      <Execution id="517b73fe-a51c-40a9-963f-0d5d99f2552b" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="BusquedaTrataComodinesComoTexto" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Clientes&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="dbe77a7f-32a2-ed82-2653-37c6d7cfe498">
+      <Execution id="95c65ec8-739d-484e-84a5-5b793d521fe0" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Productos/Create&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="1e14f051-f37d-544b-2681-437a0065d0d9">
+      <Execution id="82280c25-c924-44ec-8da0-61971b81b233" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;TRUNCATE user_07.mp_reservas&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="f2f412de-cb82-50c5-8456-78f654bde0e8">
+      <Execution id="67d4cc5c-93cf-4ebc-9d8e-2c5aae6734d4" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Clientes&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="115cc30c-5dbf-c415-85f7-ea225c7ef7bb">
+      <Execution id="952d8edc-7ae4-4525-8e69-442db7143f33" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="CicloCompletoCrearConsultarEditarEliminar" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Sucursales&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="6461df8e-385d-2f8b-cf96-d421c1e57830">
+      <Execution id="413d3881-34e3-4b53-801e-b34ece10685a" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET estado='RESERVADO' &quot;···)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="3f683e19-93ed-fe3e-2c16-35f697362258">
+      <Execution id="0e3bccd6-478c-4381-a330-36dccfc5d2e2" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_inventarios SET producto_id=prod&quot;···)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="300208b6-a99a-c778-ef69-2a0a7af5ed19">
+      <Execution id="f7b10fb4-9119-44ed-898e-f0bb17d3c37e" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PostSinAntiforgerySeRechaza" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="905aa841-0c3c-a30f-4dec-5775651c2d13">
+      <Execution id="f45d41e5-527d-434e-8556-c245060505e4" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PostSinAntiforgerySeRechaza" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.RestriccionesDeCatalogosYReferencias" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="f71a0805-1fa3-6162-8d09-e260222de81c">
+      <Execution id="32d1f63f-4063-4244-88f7-b9be631f447f" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="RestriccionesDeCatalogosYReferencias" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;DELETE FROM user_07.mp_reservas&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="40ca7b5a-4f2b-092e-09ae-e9beb5c38899">
+      <Execution id="510c39c8-8739-4d2f-bc10-e4e6672761fc" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_productos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="25231ce9-08b0-2248-216b-3b24be112c54">
+      <Execution id="6301b092-def6-4bbe-a688-45f6fd414c2a" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.ConcurrencyTests.DosReservasSimultaneasNoSobrevenden" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="053cb877-8adf-e357-e8d0-f051661c0d0a">
+      <Execution id="625bda55-48ba-44ca-a4fb-4477c70a51da" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.ConcurrencyTests" name="DosReservasSimultaneasNoSobrevenden" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.BusquedaTrataComodinesComoTexto(literal: &quot;\\&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="b1a07264-54ba-68b1-41fd-910a6cb55dc4">
+      <Execution id="04170796-bf64-4d30-9afe-332c21276f15" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="BusquedaTrataComodinesComoTexto" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Consultas/Reservas&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="e52dd599-c4a7-a551-b194-ab4e7841ab75">
+      <Execution id="40dc236c-8458-4380-910c-236bf19a9cc1" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.BorradoConRelacionesMuestraError" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="51c14dec-a181-e64a-1bc2-4631c885bc19">
+      <Execution id="ef17e9fe-9fa4-458b-b0e4-abdb129da23e" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="BorradoConRelacionesMuestraError" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;TRUNCATE user_07.mp_ingresos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="2526fbad-5fb3-06c2-9dc6-9acc83c8a407">
+      <Execution id="33e09af4-c065-461c-945e-bd53ee8b15a2" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_inventarios&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="befce92e-495f-a64d-8207-8ccac5d20dbd">
+      <Execution id="74013302-bc72-40c9-8d35-c41c1e184616" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.IngresoReservaCompraYVistasConcuerdan" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="938efd43-c19c-da10-66bb-74b274af0dbc">
+      <Execution id="a3c56412-7ec2-45fe-84af-52bc0432eb4b" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="IngresoReservaCompraYVistasConcuerdan" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_ingresos SET cantidad=cantidad+1&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="d1f741a5-97ad-8074-c351-c25799bce2b7">
+      <Execution id="e954465a-8b09-4694-a0ab-4743a26bf87c" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_ingresos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="4da15448-b786-7597-c79c-6d78d91506d9">
+      <Execution id="88cec2c5-a647-4e10-b6f4-d73c55f7eca1" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Clientes/Create&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="9d117dfc-ee91-9c41-da5f-c4e49de3bb93">
+      <Execution id="2f6e23d2-b6f3-4bcb-9155-29f92ebf7af6" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Productos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="f2b73649-6af5-07f7-2e0f-fc3da001254c">
+      <Execution id="313a76d7-2f77-4281-8f01-ee5838ea2008" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="CicloCompletoCrearConsultarEditarEliminar" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Productos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="62eb5d5d-2b4d-4e37-0744-484e2c026b33">
+      <Execution id="e11613a0-c0a0-4c32-878e-44ef62a216af" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;UPDATE user_07.mp_reservas SET cantidad=cantidad+1&quot;···)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="e415ca24-4ad7-dab3-4dc6-0f6e77fe1134">
+      <Execution id="7359c157-a9a4-4f79-b1b0-8fde9b7e0610" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.CicloCompletoCrearConsultarEditarEliminar(catalogo: &quot;Sucursales&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="38e62ed6-7b5c-379d-18a0-447e291d67c0">
+      <Execution id="b86dd00b-d1d0-4cf4-a06b-160b2763f646" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="CicloCompletoCrearConsultarEditarEliminar" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.LimiteAcumuladoIncluyeOtrasSucursales" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="42e518d6-f227-9df1-3621-d091600b41e1">
+      <Execution id="a486d070-2727-4bad-9c7e-41368cd2b8f5" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="LimiteAcumuladoIncluyeOtrasSucursales" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.JsonInvalidoNoSeGuarda" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="056c611a-f900-b717-d7fb-e4b7517c8a5a">
+      <Execution id="031c1e2e-f873-4689-93c3-2372ad214a9c" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="JsonInvalidoNoSeGuarda" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="e536c768-1f9e-a6ec-3385-ae7762960329">
+      <Execution id="200dd4a6-3d2b-466d-b297-b87105ba5f5c" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_reservas&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="06bd6966-2ccc-0f87-8c31-7f1180f3c716">
+      <Execution id="5b47ec75-f995-4de7-b5d5-df48d3977f18" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_sucursales&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="35c5c34b-2491-bbdb-4c3f-d820d99c04c3">
+      <Execution id="ae402fdb-9c7c-4223-891d-ec27d129c971" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.HistorialRechazaCambiosIndebidos(sql: &quot;DELETE FROM user_07.mp_ingresos&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="5dcb3a53-5817-b437-261e-da1a582388c3">
+      <Execution id="838c1be0-1aad-4585-a3c1-225507d55ce1" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="HistorialRechazaCambiosIndebidos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.TodasLasTablasTienenDatos(tabla: &quot;mp_clientes&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="ade47dda-e024-7ff5-62a0-f7462b81c446">
+      <Execution id="0c73d93c-d59d-42cd-a8f4-0d03ac03b2f5" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="TodasLasTablasTienenDatos" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.VencimientoDevuelveStockYQuedaInmutable" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="47f95586-16a4-9ace-ced9-f29922b7269a">
+      <Execution id="a0095745-36d3-4c71-b195-107b7c85f59e" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="VencimientoDevuelveStockYQuedaInmutable" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.WebTests.PaginasDisponibles(url: &quot;/Sucursales/Create&quot;)" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="80f0819a-bd23-3258-fcef-80f98dc8c69a">
+      <Execution id="b1420819-c2ca-4121-969b-d4f28996812b" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.WebTests" name="PaginasDisponibles" />
+    </UnitTest>
+    <UnitTest name="MiPulperia.Tests.DatabaseTests.MinimoDeExistenciasNoPuedeReservarse" storage="d:\temp\git\proyecto\tests\mipulperia.tests\bin\release\net10.0\mipulperia.tests.dll" id="88b478e7-472c-38f1-d026-fe76723c121e">
+      <Execution id="f30763be-32d5-4eda-b051-83130c064f7e" />
+      <TestMethod codeBase="D:\temp\git\Proyecto\tests\MiPulperia.Tests\bin\Release\net10.0\MiPulperia.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="MiPulperia.Tests.DatabaseTests" name="MinimoDeExistenciasNoPuedeReservarse" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="938efd43-c19c-da10-66bb-74b274af0dbc" executionId="a3c56412-7ec2-45fe-84af-52bc0432eb4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e415ca24-4ad7-dab3-4dc6-0f6e77fe1134" executionId="7359c157-a9a4-4f79-b1b0-8fde9b7e0610" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06bd6966-2ccc-0f87-8c31-7f1180f3c716" executionId="5b47ec75-f995-4de7-b5d5-df48d3977f18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="905aa841-0c3c-a30f-4dec-5775651c2d13" executionId="f45d41e5-527d-434e-8556-c245060505e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6461df8e-385d-2f8b-cf96-d421c1e57830" executionId="413d3881-34e3-4b53-801e-b34ece10685a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f71a0805-1fa3-6162-8d09-e260222de81c" executionId="32d1f63f-4063-4244-88f7-b9be631f447f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88b478e7-472c-38f1-d026-fe76723c121e" executionId="f30763be-32d5-4eda-b051-83130c064f7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1f741a5-97ad-8074-c351-c25799bce2b7" executionId="e954465a-8b09-4694-a0ab-4743a26bf87c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e52dd599-c4a7-a551-b194-ab4e7841ab75" executionId="40dc236c-8458-4380-910c-236bf19a9cc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4da15448-b786-7597-c79c-6d78d91506d9" executionId="88cec2c5-a647-4e10-b6f4-d73c55f7eca1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f683e19-93ed-fe3e-2c16-35f697362258" executionId="0e3bccd6-478c-4381-a330-36dccfc5d2e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="befce92e-495f-a64d-8207-8ccac5d20dbd" executionId="74013302-bc72-40c9-8d35-c41c1e184616" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47f95586-16a4-9ace-ced9-f29922b7269a" executionId="a0095745-36d3-4c71-b195-107b7c85f59e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="25231ce9-08b0-2248-216b-3b24be112c54" executionId="6301b092-def6-4bbe-a688-45f6fd414c2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2f412de-cb82-50c5-8456-78f654bde0e8" executionId="67d4cc5c-93cf-4ebc-9d8e-2c5aae6734d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dbe77a7f-32a2-ed82-2653-37c6d7cfe498" executionId="95c65ec8-739d-484e-84a5-5b793d521fe0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e536c768-1f9e-a6ec-3385-ae7762960329" executionId="200dd4a6-3d2b-466d-b297-b87105ba5f5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2b73649-6af5-07f7-2e0f-fc3da001254c" executionId="313a76d7-2f77-4281-8f01-ee5838ea2008" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b1a07264-54ba-68b1-41fd-910a6cb55dc4" executionId="04170796-bf64-4d30-9afe-332c21276f15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="927d51f9-581b-b165-4655-621b1dbd8265" executionId="09c4d3cd-0b00-4f2a-a5cf-e557fe90ac01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc9a31e5-43c3-8459-f25c-d4151ce4c179" executionId="517b73fe-a51c-40a9-963f-0d5d99f2552b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2526fbad-5fb3-06c2-9dc6-9acc83c8a407" executionId="33e09af4-c065-461c-945e-bd53ee8b15a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80f0819a-bd23-3258-fcef-80f98dc8c69a" executionId="b1420819-c2ca-4121-969b-d4f28996812b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40ca7b5a-4f2b-092e-09ae-e9beb5c38899" executionId="510c39c8-8739-4d2f-bc10-e4e6672761fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="056c611a-f900-b717-d7fb-e4b7517c8a5a" executionId="031c1e2e-f873-4689-93c3-2372ad214a9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51c14dec-a181-e64a-1bc2-4631c885bc19" executionId="ef17e9fe-9fa4-458b-b0e4-abdb129da23e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e14f051-f37d-544b-2681-437a0065d0d9" executionId="82280c25-c924-44ec-8da0-61971b81b233" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d117dfc-ee91-9c41-da5f-c4e49de3bb93" executionId="2f6e23d2-b6f3-4bcb-9155-29f92ebf7af6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58a06751-2f53-17e6-a5dd-aeec2339ddf6" executionId="d088eeb3-7113-4735-aa53-d0cbc0b3d39c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ade47dda-e024-7ff5-62a0-f7462b81c446" executionId="0c73d93c-d59d-42cd-a8f4-0d03ac03b2f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="35c5c34b-2491-bbdb-4c3f-d820d99c04c3" executionId="ae402fdb-9c7c-4223-891d-ec27d129c971" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="42e518d6-f227-9df1-3621-d091600b41e1" executionId="a486d070-2727-4bad-9c7e-41368cd2b8f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3dbb41f-ff89-aeaf-5459-d6fce1822a69" executionId="bcf3266c-5c4d-4962-8499-efcc0a31e62c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38e62ed6-7b5c-379d-18a0-447e291d67c0" executionId="b86dd00b-d1d0-4cf4-a06b-160b2763f646" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="115cc30c-5dbf-c415-85f7-ea225c7ef7bb" executionId="952d8edc-7ae4-4525-8e69-442db7143f33" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="053cb877-8adf-e357-e8d0-f051661c0d0a" executionId="625bda55-48ba-44ca-a4fb-4477c70a51da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62eb5d5d-2b4d-4e37-0744-484e2c026b33" executionId="e11613a0-c0a0-4c32-878e-44ef62a216af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="300208b6-a99a-c778-ef69-2a0a7af5ed19" executionId="f7b10fb4-9119-44ed-898e-f0bb17d3c37e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5dcb3a53-5817-b437-261e-da1a582388c3" executionId="838c1be0-1aad-4585-a3c1-225507d55ce1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="39" executed="39" passed="39" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v3.1.4+50e68bbb8b (64-bit .NET 10.0.12)&#xD;
+[xUnit.net 00:00:00.54]   Discovering: MiPulperia.Tests&#xD;
+[xUnit.net 00:00:00.65]   Discovered:  MiPulperia.Tests&#xD;
+[xUnit.net 00:00:00.68]   Starting:    MiPulperia.Tests&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application started. Press Ctrl+C to shut down.&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Hosting environment: Development&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Content root path: D:\temp\git\Proyecto\src\MiPulperia.Web&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.atributos, m.codigo, m.disponible, m.existencia_minima, m.horas_reserva, m.inventario_id, m.maximo_reserva, m.precio, m.producto, m.reservada, m.sucursal, m.vendida&#xD;
+      FROM user_07.mp_v_productos_existencias AS m&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT count(*)::int&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT count(*)::int&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT count(*)::int&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.cantidad, m.cliente, m.estado, m.fecha_cierre, m.fecha_reserva, m.fecha_vencimiento, m.id, m.producto, m.sucursal, m.total&#xD;
+      FROM user_07.mp_v_reservas_clientes AS m&#xD;
+      ORDER BY m.fecha_reserva DESC, m.id DESC&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.atributos, m.codigo, m.disponible, m.existencia_minima, m.horas_reserva, m.inventario_id, m.maximo_reserva, m.precio, m.producto, m.reservada, m.sucursal, m.vendida&#xD;
+      FROM user_07.mp_v_productos_existencias AS m&#xD;
+      ORDER BY m.producto, m.sucursal&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (4ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+fail: Microsoft.EntityFrameworkCore.Database.Command[20102]&#xD;
+      Failed executing DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      DELETE FROM user_07.mp_clientes&#xD;
+      WHERE id = @p0 AND xmin = @p1;&#xD;
+fail: Microsoft.EntityFrameworkCore.Update[10000]&#xD;
+      An exception occurred in the database while saving changes for context type 'MiPulperia.Web.Data.PulperiaDbContext'.&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): 23001: update or delete on table "mp_clientes" violates RESTRICT setting of foreign key constraint "mp_reservas_cliente_id_fkey" on table "mp_reservas"&#xD;
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: 23001&#xD;
+          MessageText: update or delete on table "mp_clientes" violates RESTRICT setting of foreign key constraint "mp_reservas_cliente_id_fkey" on table "mp_reservas"&#xD;
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+          SchemaName: user_07&#xD;
+          TableName: mp_reservas&#xD;
+          ConstraintName: mp_reservas_cliente_id_fkey&#xD;
+          File: ri_triggers.c&#xD;
+          Line: 2797&#xD;
+          Routine: ri_ReportViolation&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.&#xD;
+       ---&gt; Npgsql.PostgresException (0x80004005): 23001: update or delete on table "mp_clientes" violates RESTRICT setting of foreign key constraint "mp_reservas_cliente_id_fkey" on table "mp_reservas"&#xD;
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)&#xD;
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource&lt;TResult&gt;.GetResult(Int16 token)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+        Exception data:&#xD;
+          Severity: ERROR&#xD;
+          SqlState: 23001&#xD;
+          MessageText: update or delete on table "mp_clientes" violates RESTRICT setting of foreign key constraint "mp_reservas_cliente_id_fkey" on table "mp_reservas"&#xD;
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.&#xD;
+          SchemaName: user_07&#xD;
+          TableName: mp_reservas&#xD;
+          ConstraintName: mp_reservas_cliente_id_fkey&#xD;
+          File: ri_triggers.c&#xD;
+          Line: 2797&#xD;
+          Routine: ri_ReportViolation&#xD;
+         --- End of inner exception stack trace ---&#xD;
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+         at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)&#xD;
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO user_07.mp_clientes (correo, identificacion, nombre, telefono)&#xD;
+      VALUES (@p0, @p1, @p2, @p3)&#xD;
+      RETURNING id, xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?', @p1='?', @p2='?', @p3='?', @p5='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_clientes SET correo = @p0, identificacion = @p1, nombre = @p2, telefono = @p3&#xD;
+      WHERE id = @p4 AND xmin = @p5&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?', @p1='?', @p2='?', @p3='?', @p5='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_clientes SET correo = @p0, identificacion = @p1, nombre = @p2, telefono = @p3&#xD;
+      WHERE id = @p4 AND xmin = @p5&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      DELETE FROM user_07.mp_clientes&#xD;
+      WHERE id = @p0 AND xmin = @p1;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.correo, m.identificacion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_clientes AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Object), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO user_07.mp_productos (atributos, codigo, existencia_minima, horas_reserva, maximo_reserva, nombre, precio)&#xD;
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)&#xD;
+      RETURNING id, xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = Object), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Decimal), @p8='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_productos SET atributos = @p0, codigo = @p1, existencia_minima = @p2, horas_reserva = @p3, maximo_reserva = @p4, nombre = @p5, precio = @p6&#xD;
+      WHERE id = @p7 AND xmin = @p8&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (DbType = Object), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?', @p6='?' (DbType = Decimal), @p8='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_productos SET atributos = @p0, codigo = @p1, existencia_minima = @p2, horas_reserva = @p3, maximo_reserva = @p4, nombre = @p5, precio = @p6&#xD;
+      WHERE id = @p7 AND xmin = @p8&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      DELETE FROM user_07.mp_productos&#xD;
+      WHERE id = @p0 AND xmin = @p1;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.atributos, m.codigo, m.existencia_minima, m.horas_reserva, m.maximo_reserva, m.nombre, m.precio, m.xmin&#xD;
+      FROM user_07.mp_productos AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      INSERT INTO user_07.mp_sucursales (direccion, nombre, telefono)&#xD;
+      VALUES (@p0, @p1, @p2)&#xD;
+      RETURNING id, xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p='?'], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.nombre ILIKE @p ESCAPE '\'&#xD;
+      ORDER BY m.nombre, m.id&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?', @p1='?', @p2='?', @p4='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_sucursales SET direccion = @p0, nombre = @p1, telefono = @p2&#xD;
+      WHERE id = @p3 AND xmin = @p4&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?', @p1='?', @p2='?', @p4='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      UPDATE user_07.mp_sucursales SET direccion = @p0, nombre = @p1, telefono = @p2&#xD;
+      WHERE id = @p3 AND xmin = @p4&#xD;
+      RETURNING xmin;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Object)], CommandType='Text', CommandTimeout='30']&#xD;
+      DELETE FROM user_07.mp_sucursales&#xD;
+      WHERE id = @p0 AND xmin = @p1;&#xD;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]&#xD;
+      Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']&#xD;
+      SELECT m.id, m.direccion, m.nombre, m.telefono, m.xmin&#xD;
+      FROM user_07.mp_sucursales AS m&#xD;
+      WHERE m.id = @id&#xD;
+      LIMIT 2&#xD;
+info: Microsoft.Hosting.Lifetime[0]&#xD;
+      Application is shutting down...&#xD;
+[xUnit.net 00:00:04.57]   Finished:    MiPulperia.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

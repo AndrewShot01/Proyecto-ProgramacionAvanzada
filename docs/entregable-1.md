@@ -4,7 +4,7 @@
 
 Se implementaron los mantenimientos de sucursales, clientes y productos, sus consultas individuales, seis tablas PostgreSQL con datos ficticios, restricciones, triggers y dos vistas. La validación local utiliza PostgreSQL real y pruebas HTTP de la aplicación MVC. El diseño completo está en [modelo-datos.md](modelo-datos.md).
 
-La implementación se instaló y verificó en el esquema `user_07` de `advanced_programming`, en el servidor PostgreSQL del profesor. La aplicación se conecta mediante TLS con verificación del certificado. No se modificaron las tablas PRQ existentes. La publicación de la aplicación en Azure, la subida del código a GitHub y la ejecución remota de CI/CD siguen pendientes.
+La implementación se instaló y verificó en el esquema `user_07` de `advanced_programming`, en el servidor PostgreSQL del profesor. La aplicación se conecta mediante TLS con verificación del certificado. No se modificaron las tablas PRQ existentes. El código está en GitHub; la publicación de la aplicación en Azure sigue pendiente.
 
 ## Requisitos y estado
 
@@ -18,7 +18,7 @@ La implementación se instaló y verificó en el esquema `user_07` de `advanced_
 | Mantenimiento clientes | Alta, consulta, búsqueda, cambio y borrado | Prueba HTTP y pantalla 03 |
 | Mantenimiento productos | CRUD, reglas de reserva, JSONB y vista previa jQuery | Prueba HTTP y pantallas 04–05 |
 | Integración en base del profesor | Instalada y verificada con TLS | verificacion-nube.txt, http-nube.json y crud-nube.json |
-| CI/CD | Archivos preparados, validación local aprobada; ejecución en GitHub pendiente | .github/workflows |
+| CI/CD | CI aprobada en GitHub; despliegue Azure pendiente | .github/workflows y evidencias/verificacion-ci.json |
 | Publicación Azure | Pendiente de recursos y credenciales de despliegue | README |
 
 ## Pruebas reproducibles
@@ -56,6 +56,8 @@ La variable `PULPERIA_TEST_CONNECTION` debe apuntar a una base exclusiva para pr
 
 El archivo TRX contiene el resultado detallado de las **39 pruebas automatizadas aprobadas**. El navegador comprobó además las consultas, la vista previa JSON, el error de borrado y el diseño móvil a 390 píxeles sin desbordamiento horizontal de la página. Las tablas conservan desplazamiento interno en pantallas pequeñas.
 
+GitHub Actions también completó correctamente restauración, compilación, pruebas y empaquetado sobre Linux con PostgreSQL 17: [ejecución 42515482001](https://github.com/AndrewShot01/Proyecto-ProgramacionAvanzada/actions/runs/42515482001), correspondiente al código `049ef0a`. El despliegue permanece pendiente hasta configurar el App Service.
+
 En el servidor del profesor se ejecutó además el script de integridad 004, con sus cinco rechazos esperados y saldos no negativos; finalizó con ROLLBACK. La aplicación respondió HTTP 200 en inicio, sucursales, clientes, productos, existencias y reservas. Se comprobó mediante la interfaz el alta, edición y eliminación de un registro temporal de cada catálogo; esos registros de verificación quedaron eliminados. Las 39 pruebas automatizadas completas se mantuvieron en la base local aislada.
 
 ## Interpretación de los resultados
@@ -66,7 +68,7 @@ Los errores de negocio se presentan en español. Las restricciones se ejecutan t
 
 ## Pendientes y segundo entregable
 
-La base del profesor ya tiene las tablas, datos, vistas y triggers, y la conexión local está configurada fuera de Git. Para cerrar la entrega en el ambiente solicitado falta subir los archivos al repositorio, verificar el pipeline y publicar la aplicación en Azure. La aplicación aún se ejecuta localmente aunque sus datos estén en la nube.
+La base del profesor ya tiene las tablas, datos, vistas y triggers, y la conexión local está configurada fuera de Git. El código está en el repositorio indicado. Para cerrar la entrega en el ambiente solicitado falta publicar la aplicación en Azure. La aplicación aún se ejecuta localmente aunque sus datos estén en la nube.
 
 Para el segundo entregable faltan los formularios de ingreso de inventario, reserva y compra, el proceso calendarizado que cancela reservas vencidas, consultas maestro-detalle, circuitos con Polly y notificaciones SignalR. No existe cancelación manual en la interfaz. La separación de permisos del rol calendarizado debe configurarse con ese proceso. El TODO de penalización necesita una política del profesor; no se incorporó una regla inventada.
 

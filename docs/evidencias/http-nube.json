@@ -1,0 +1,32 @@
+[
+  {
+    "ruta": "/",
+    "estado": 200,
+    "titulo": "Inicio · Mi Pulpería de Barrio"
+  },
+  {
+    "ruta": "/Sucursales",
+    "estado": 200,
+    "titulo": "Sucursales · Mi Pulpería de Barrio"
+  },
+  {
+    "ruta": "/Clientes",
+    "estado": 200,
+    "titulo": "Clientes · Mi Pulpería de Barrio"
+  },
+  {
+    "ruta": "/Productos",
+    "estado": 200,
+    "titulo": "Productos · Mi Pulpería de Barrio"
+  },
+  {
+    "ruta": "/Consultas/Existencias",
+    "estado": 200,
+    "titulo": "Existencias · Mi Pulpería de Barrio"
+  },
+  {
+    "ruta": "/Consultas/Reservas",
+    "estado": 200,
+    "titulo": "Reservas · Mi Pulpería de Barrio"
+  }
+]

@@ -433,3 +433,5 @@ appsettings.Local.json
 *.local.json
 .env
 .env.*
+# Copia inicial conservada localmente; el informe vigente lleva el sufijo Actualizado.
+/docs/Informe-Primer-Entregable.docx

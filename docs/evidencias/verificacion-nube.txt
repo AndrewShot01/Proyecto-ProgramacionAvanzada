@@ -1,0 +1,24 @@
+﻿{"usuario":"user_07","base":"advanced_programming","puede_usar":true,"puede_crear":true,"tls":true}
+{"tablename":"PRQAutomoviles"}
+{"tablename":"PRQIngresosAutomoviles"}
+{"tablename":"PRQParqueos"}
+{"tablename":"mp_clientes"}
+{"tablename":"mp_ingresos"}
+{"tablename":"mp_inventarios"}
+{"tablename":"mp_productos"}
+{"tablename":"mp_reservas"}
+{"tablename":"mp_sucursales"}
+mp_sucursales: 3
+mp_clientes: 3
+mp_productos: 3
+mp_inventarios: 9
+mp_ingresos: 9
+mp_reservas: 2
+{"disponible":177,"reservada":2,"vendida":1}
+OK: ingreso inmutable
+OK: reserva no eliminable
+OK: solamente puede cambiar el estado
+OK: referencias protegidas
+OK: atributos deben ser objeto JSON
+{"prueba":"Existencias sin saldos negativos","resultado":true}
+Script completado: 004_pruebas_integridad.sql

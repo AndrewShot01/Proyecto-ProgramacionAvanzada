@@ -4,7 +4,9 @@ Primer entregable de Programación Avanzada, Universidad Americana, III cuatrime
 
 Aplicación C# con ASP.NET Core MVC (.NET 10), Razor, jQuery y Entity Framework Core/Npgsql. Base PostgreSQL del profesor: `advanced_programming`, esquema `user_07`. El código referencia explícitamente ese esquema.
 
-**Estado verificado el 7 de noviembre de 2026:** esquema instalado en el servidor del profesor y aplicación conectada con TLS. Se comprobaron las seis páginas principales y el alta, edición y eliminación de registros temporales en los tres catálogos. La conexión de este equipo está en Secret Manager; no hay contraseñas en Git. La aplicación web todavía se ejecuta localmente; publicar en Azure y subir el código a GitHub siguen pendientes.
+**Estado verificado el 8 de noviembre de 2026:** esquema instalado en el servidor del profesor y aplicación conectada con TLS. Se comprobaron las seis páginas principales y el alta, edición y eliminación de registros temporales en los tres catálogos. La conexión de este equipo está en Secret Manager; no hay contraseñas en Git. El código está en GitHub. La aplicación web todavía se ejecuta localmente; falta publicarla en Azure.
+
+**Validación:** 39 pruebas locales aprobadas y [CI aprobada en GitHub Actions](https://github.com/AndrewShot01/Proyecto-ProgramacionAvanzada/actions/runs/42515482001), incluida la generación del paquete de publicación.
 
 ## Contenido
 
@@ -67,7 +69,7 @@ La autenticación de usuarios no forma parte del enunciado. El sitio contiene op
 
 - [Modelo y relaciones](docs/modelo-datos.md).
 - [Alcance y pruebas del entregable](docs/entregable-1.md).
-- [Informe en Word](docs/Informe-Primer-Entregable.docx) con análisis, comandos y capturas.
+- [Informe actualizado en Word](docs/Informe-Primer-Entregable-Actualizado.docx) con análisis, comandos y capturas.
 - [Diagrama de base de datos](docs/diagrama-base-datos.png).
 - [Creación del App Service y publicación en Azure](docs/publicar-azure.md).
 - Scripts reproducibles en `database/`; código en `src/`; pruebas en `tests/`.
