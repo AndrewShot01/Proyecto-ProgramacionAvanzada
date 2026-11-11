@@ -1,0 +1,5 @@
+@model DetalleCliente
+@{ ViewData["Title"] = "Reservas de " + Model.Cliente.Nombre; }
+<a asp-controller="Clientes" asp-action="Index">← Volver a clientes</a>
+<div class="page-heading"><div><p class="eyebrow">CLIENTE Y SUS RESERVAS</p><h1>@Model.Cliente.Nombre</h1><p>@Model.Cliente.Identificacion · @Model.Cliente.Correo · @Model.Cliente.Telefono</p></div><a class="button" asp-controller="Procesos" asp-action="Reserva" asp-route-clienteId="@Model.Cliente.Id">Nueva reserva</a></div>
+<partial name="_ReservasSucursales" model="Model.Sucursales" />

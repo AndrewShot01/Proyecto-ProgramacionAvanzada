@@ -1,0 +1,14 @@
+@model IngresoFormulario
+@{ ViewData["Title"] = "Ingreso de inventario"; }
+<div class="page-heading"><div><p class="eyebrow">INVENTARIO</p><h1>Recibir productos</h1><p>Registra las unidades que llegan a una sucursal.</p></div></div>
+<form method="post" class="form-card">
+<div asp-validation-summary="All" class="validation"></div><input asp-for="SolicitudId" type="hidden" />
+<div class="form-grid">
+<div><label asp-for="SucursalId"></label><select asp-for="SucursalId" asp-items="ViewBag.Sucursales"><option value="">Seleccionar sucursal</option></select></div>
+<div><label asp-for="ProductoId"></label><select asp-for="ProductoId" asp-items="ViewBag.Productos"><option value="">Seleccionar producto</option></select></div>
+<div><label asp-for="Cantidad"></label><input asp-for="Cantidad" type="number" min="1" max="1000000" /></div>
+<div><label asp-for="Referencia"></label><input asp-for="Referencia" placeholder="Factura, entrega o referencia" /></div>
+</div><p class="form-help">El ingreso aumenta las existencias. Una vez registrado, permanece en el historial y no se puede editar ni eliminar.</p>
+<div class="form-actions"><button class="button" type="submit">Registrar ingreso</button><a class="button secondary" asp-controller="Consultas" asp-action="Existencias">Volver al inventario</a></div>
+</form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

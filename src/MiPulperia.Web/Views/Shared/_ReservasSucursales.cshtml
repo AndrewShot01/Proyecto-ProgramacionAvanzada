@@ -1,0 +1,14 @@
+@model IReadOnlyList<ReservasSucursal>
+@{ var cr = System.Globalization.CultureInfo.GetCultureInfo("es-CR"); }
+@foreach (var s in Model.Where(x => x.Circuito.Estado != "CERRADO"))
+{ <div class="alert sucursal-inactiva" data-sucursal="@s.Sucursal.Id"><strong>@s.Sucursal.Nombre</strong><p class="circuit-message">@s.Circuito.Mensaje</p></div> }
+<div class="panel table-scroll"><table><thead><tr><th>Cliente</th><th>Producto y sucursal</th><th>Cantidad</th><th>Total</th><th>Fechas</th><th>Resultado</th><th>Acción</th></tr></thead><tbody>
+@foreach (var r in Model.SelectMany(s => s.Filas).OrderByDescending(r => r.FechaReserva).ThenByDescending(r => r.Id))
+{
+<tr data-sucursal="@r.SucursalId"><td><a asp-controller="Consultas" asp-action="Cliente" asp-route-id="@r.ClienteId">@r.Cliente</a></td><td><strong>@r.Producto</strong><small>@r.Sucursal</small></td><td>@r.Cantidad</td><td>@r.Total.ToString("C", cr)</td>
+<td>Reserva: @r.FechaReserva.AddHours(-6).ToString("dd/MM/yyyy HH:mm:ss")<br />Vence: @r.FechaVencimiento.AddHours(-6).ToString("dd/MM/yyyy HH:mm:ss")<br />Cierre: @(r.FechaCierre?.AddHours(-6).ToString("dd/MM/yyyy HH:mm:ss") ?? "—")</td>
+<td><span class="pill">@r.Estado</span><small>@(r.Estado == "COMPRADO" ? "Compra materializada" : r.Estado == "CANCELADO" ? "Cancelada por vencimiento" : r.FechaVencimiento <= DateTime.UtcNow ? "Vencida; pendiente del proceso automático" : "Pendiente de compra")</small><span class="circuit-message"></span></td>
+<td>@if (r.Estado == "RESERVADO" && r.FechaVencimiento > DateTime.UtcNow) { <a data-operacion asp-controller="Procesos" asp-action="Comprar" asp-route-id="@r.Id" asp-route-sucursalId="@r.SucursalId">Comprar</a> }</td></tr>
+}
+@if (!Model.SelectMany(s => s.Filas).Any()) { <tr><td colspan="7">No hay reservas disponibles para mostrar.</td></tr> }
+</tbody></table></div>

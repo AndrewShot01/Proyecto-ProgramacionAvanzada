@@ -1,5 +1,9 @@
 @model Inicio
 @{ ViewData["Title"] = "Inicio"; }
+@if (Model.SucursalesNoDisponibles > 0)
+{
+    <div class="alert" role="status">Los saldos son parciales: @Model.SucursalesNoDisponibles sucursal(es) están temporalmente sin conexión.</div>
+}
 <div class="page-heading"><div><p class="eyebrow">UN VISTAZO A TU NEGOCIO</p><h1>Bienvenido a la pulpería.</h1><p class="muted">Tus tiendas, tus productos y tu gente, en un solo lugar.</p></div><span class="pill">Panel general</span></div>
 <section class="hero"><div><span class="hero-kicker">CERCA DE TU BARRIO</span><h2>Pequeños detalles.<br />Un negocio en orden.</h2><p>Administra los catálogos y consulta la disponibilidad<br class="desktop" /> de cada producto en tus sucursales.</p><a class="button light" asp-controller="Productos" asp-action="Index">Explorar productos <span>↗</span></a></div><div class="store-illustration" aria-hidden="true"><div class="store-roof"></div><div class="awning"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="store-front"><div class="store-window"><span>DE TODO<br />UN POQUITO</span></div><div class="store-door"></div></div><div class="store-ground"></div><span class="store-sun"></span></div></section>
 <section class="metrics" aria-label="Resumen"><article><span>Sucursales</span><strong>@Model.Sucursales.ToString("00")</strong><small>Tiendas en el barrio</small></article><article><span>Clientes</span><strong>@Model.Clientes.ToString("00")</strong><small>Personas registradas</small></article><article><span>Productos</span><strong>@Model.Productos.ToString("00")</strong><small>En nuestro catálogo</small></article><article><span>Unidades disponibles</span><strong>@Model.Disponibles</strong><small>@Model.Reservadas unidades reservadas</small></article></section>

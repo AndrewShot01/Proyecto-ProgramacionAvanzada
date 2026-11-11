@@ -1,7 +1,5 @@
-@model IReadOnlyList<Existencia>
+@model ConsultaExistencias
 @{ ViewData["Title"] = "Existencias"; }
-<div class="page-heading"><div><p class="eyebrow">CONSULTAS</p><h1>Lo que hay en tienda</h1><p class="muted">Disponibilidad y reservas por producto y sucursal.</p></div><span class="pill">Inventario</span></div>
-<section class="panel"><div class="table-toolbar"><form method="get" class="search-form"><label class="sr-only" for="q">Nombre del producto</label><input id="q" name="q" value="@ViewData["Busqueda"]" placeholder="Buscar producto…" /><button class="button secondary">Buscar</button></form><span class="count">@Model.Count registro(s)</span></div><div class="table-scroll"><table><thead><tr><th>Producto / atributos</th><th>Sucursal</th><th>Precio</th><th>Disponible</th><th>Reservada</th><th>Vendida</th><th>Condiciones</th></tr></thead><tbody>
-@foreach (var x in Model) { <tr><td><strong>@x.Producto</strong><small class="cell-detail">@x.Codigo</small><code class="json-cell">@x.Atributos</code></td><td>@x.Sucursal</td><td>@x.Precio.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR"))</td><td><span class="stock">@x.Disponible</span></td><td>@x.Reservada</td><td>@x.Vendida</td><td><small>Máximo @x.MaximoReserva / cliente<br />@x.HorasReserva.ToString("0.######") horas<br />Mínimo @x.ExistenciaMinima</small></td></tr> }
-@if (Model.Count == 0) { <tr><td colspan="7" class="empty">No se encontraron existencias.</td></tr> }
-</tbody></table></div></section>
+<div class="page-heading"><div><p class="eyebrow">CONSULTAS</p><h1>Lo que hay en tienda</h1><p>Disponibilidad y reservas por producto y sucursal.</p></div><a class="button" asp-controller="Procesos" asp-action="Ingreso">+ Ingresar inventario</a></div>
+<form method="get" class="search-form search-bar"><input name="q" value="@Model.Busqueda" placeholder="Buscar producto..." aria-label="Buscar producto" /><button class="button secondary">Buscar</button></form>
+<partial name="_ExistenciasSucursales" model="Model.Sucursales" />

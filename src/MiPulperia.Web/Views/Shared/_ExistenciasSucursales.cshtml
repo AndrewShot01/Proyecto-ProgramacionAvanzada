@@ -1,0 +1,21 @@
+@model IReadOnlyList<ExistenciasSucursal>
+@{ var cr = System.Globalization.CultureInfo.GetCultureInfo("es-CR"); }
+@foreach (var s in Model)
+{
+<section class="panel sucursal-panel @(s.Circuito.Estado != "CERRADO" ? "sucursal-inactiva" : "")" data-sucursal="@s.Sucursal.Id">
+<div class="section-heading"><h2>@s.Sucursal.Nombre</h2><span class="circuit-state">@s.Circuito.Estado</span></div>
+<p class="circuit-message" aria-live="polite">@(s.Circuito.Estado != "CERRADO" ? s.Circuito.Mensaje : "")</p>
+@if (s.Circuito.Estado == "CERRADO")
+{
+<div class="table-scroll"><table><thead><tr><th>Producto y atributos</th><th>Precio</th><th>Disponible</th><th>Reservada</th><th>Vendida</th><th>Condiciones</th><th>Acciones</th></tr></thead><tbody>
+@foreach (var p in s.Filas)
+{
+<tr><td><a asp-controller="Consultas" asp-action="Producto" asp-route-id="@p.ProductoId"><strong>@p.Producto</strong></a><small>@p.Codigo</small><code>@p.Atributos</code></td><td>@p.Precio.ToString("C", cr)</td><td>@p.Disponible</td><td>@p.Reservada</td><td>@p.Vendida</td>
+<td>Máximo @p.MaximoReserva / cliente<br />@p.HorasReserva.ToString("0.######") horas<br />Mínimo @p.ExistenciaMinima</td>
+<td><a data-operacion asp-controller="Procesos" asp-action="Reserva" asp-route-sucursalId="@s.Sucursal.Id" asp-route-productoId="@p.ProductoId">Reservar</a></td></tr>
+}
+@if (s.Filas.Count == 0) { <tr><td colspan="7">No hay existencias registradas que coincidan con esta consulta.</td></tr> }
+</tbody></table></div>
+}
+</section>
+}

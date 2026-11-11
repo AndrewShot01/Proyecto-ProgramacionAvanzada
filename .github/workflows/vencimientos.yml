@@ -1,0 +1,26 @@
+name: Procesar reservas vencidas
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: vencimientos
+  cancel-in-progress: false
+jobs:
+  procesar:
+    if: vars.AZURE_WEBAPP_URL != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: azure
+    steps:
+      - name: Activar aplicación y procesar reservas vencidas
+        env:
+          APP_URL: ${{ vars.AZURE_WEBAPP_URL }}
+          TASK_KEY: ${{ secrets.PULPERIA_TASK_KEY }}
+        run: |
+          test -n "$TASK_KEY"
+          curl --fail --silent --show-error --retry 2 --retry-delay 10 --max-time 90 \
+            --request POST --header "X-Pulperia-Task-Key: $TASK_KEY" \
+            "$APP_URL/tareas/vencimientos"

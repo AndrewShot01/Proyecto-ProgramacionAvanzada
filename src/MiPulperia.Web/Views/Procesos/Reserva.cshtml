@@ -1,0 +1,14 @@
+@model ReservaFormulario
+@{ ViewData["Title"] = "Nueva reserva"; }
+<div class="page-heading"><div><p class="eyebrow">RESERVAS</p><h1>Reservar productos</h1><p>El precio, el plazo y los límites se verifican al confirmar la reserva.</p></div></div>
+<form method="post" class="form-card">
+<div asp-validation-summary="All" class="validation"></div><input asp-for="SolicitudId" type="hidden" />
+<div class="form-grid">
+<div><label asp-for="ClienteId"></label><select asp-for="ClienteId" asp-items="ViewBag.Clientes"><option value="">Seleccionar cliente</option></select></div>
+<div><label asp-for="SucursalId"></label><select asp-for="SucursalId" asp-items="ViewBag.Sucursales"><option value="">Seleccionar sucursal</option></select></div>
+<div><label asp-for="ProductoId"></label><select asp-for="ProductoId" asp-items="ViewBag.Productos"><option value="">Seleccionar producto</option></select></div>
+<div><label asp-for="Cantidad"></label><input asp-for="Cantidad" type="number" min="1" max="1000000" /></div>
+</div><p class="form-help">Las unidades reservadas dejan de estar disponibles. La reserva se cancela automáticamente después del vencimiento si no se compra.</p>
+<div class="form-actions"><button class="button" type="submit">Confirmar reserva</button><a class="button secondary" asp-controller="Consultas" asp-action="Existencias">Consultar disponibilidad</a></div>
+</form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

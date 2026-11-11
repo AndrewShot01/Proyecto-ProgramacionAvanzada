@@ -11,20 +11,25 @@
     <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-icon">mp.</span><span>Mi Pulpería<small>DE BARRIO</small></span></a>
     <p class="nav-label">ADMINISTRACIÓN</p>
     <nav aria-label="Navegación principal">
-    @foreach (var link in new[] { ("Home", "Index", "Inicio", "⌂"), ("Sucursales", "Index", "Sucursales", "01"), ("Clientes", "Index", "Clientes", "02"), ("Productos", "Index", "Productos", "03"), ("Consultas", "Existencias", "Existencias", "04"), ("Consultas", "Reservas", "Reservas", "05") })
+    @foreach (var link in new[] { ("Home", "Index", "Inicio", "⌂"), ("Sucursales", "Index", "Sucursales", "01"), ("Clientes", "Index", "Clientes", "02"), ("Productos", "Index", "Productos", "03"), ("Consultas", "Existencias", "Existencias", "04"), ("Consultas", "Reservas", "Reservas", "05"), ("Procesos", "Ingreso", "Ingresar inventario", "06"), ("Procesos", "Reserva", "Nueva reserva", "07"), ("Estado", "Index", "Conexión de tiendas", "08") })
     {
-        var active = ViewContext.RouteData.Values["controller"]?.ToString() == link.Item1 && (link.Item1 != "Consultas" || ViewContext.RouteData.Values["action"]?.ToString() == link.Item2);
+        var active = ViewContext.RouteData.Values["controller"]?.ToString() == link.Item1 && ViewContext.RouteData.Values["action"]?.ToString() == link.Item2;
         <a class="@(active ? "active" : "")" asp-controller="@link.Item1" asp-action="@link.Item2"><span>@link.Item4</span>@link.Item3</a>
     }
     </nav>
-    <div class="sidebar-bottom"><span class="status-dot"></span> Hecho para nuestro barrio<small>Gestión de tiendas e inventario</small></div>
+    <div class="sidebar-bottom">
+        @if (User.Identity?.IsAuthenticated == true) { <form asp-controller="Acceso" asp-action="Salir" method="post"><button class="button secondary" type="submit">Cerrar sesión</button></form> }
+        <span class="status-dot"></span> Hecho para nuestro barrio<small>Gestión de tiendas e inventario</small></div>
 </aside>
 <div class="workspace"><header class="topbar"><span>MI PULPERÍA DE BARRIO</span><span class="topbar-tag">Administración</span></header>
 <main id="contenido">
     @if (TempData["Exito"] is string exito) { <div class="alert success" role="status">@exito</div> }
+    @if (TempData["Error"] is string error) { <div class="alert" role="alert">@error</div> }
     @RenderBody()
 </main><footer>Mi Pulpería de Barrio <span>Todo en su lugar.</span></footer></div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/signalr/signalr.min.js"></script>
+<script src="~/js/circuitos.js" asp-append-version="true"></script>
 @await RenderSectionAsync("Scripts", required: false)
 </body></html>

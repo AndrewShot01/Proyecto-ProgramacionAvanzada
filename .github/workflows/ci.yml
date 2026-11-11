@@ -1,4 +1,4 @@
-name: Validar primer entregable
+name: Validar proyecto
 on:
   push:
     branches: [main]
@@ -31,7 +31,7 @@ jobs:
       - name: Crear base de prueba
         run: |
           psql -h localhost -U postgres -d pulperia_test -v ON_ERROR_STOP=1 -c 'CREATE SCHEMA user_07'
-          psql -h localhost -U postgres -d pulperia_test -v ON_ERROR_STOP=1 -f database/001_estructura.sql -f database/002_datos_demo.sql
+          psql -h localhost -U postgres -d pulperia_test -v ON_ERROR_STOP=1 -f database/001_estructura.sql -f database/002_datos_demo.sql -f database/005_segundo_entregable.sql
       - run: dotnet restore
       - run: dotnet build --no-restore --configuration Release
       - run: dotnet test --no-build --configuration Release --logger trx --results-directory TestResults

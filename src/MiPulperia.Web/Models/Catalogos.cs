@@ -58,11 +58,13 @@ public sealed class Producto : Catalogo, IValidatableObject
 public sealed record FilaCatalogo(int Id, string[] Celdas);
 public sealed record ListaCatalogo(string Titulo, string Descripcion, string[] Columnas, IReadOnlyList<FilaCatalogo> Filas, string? Busqueda);
 public sealed record EliminarCatalogo(int Id, uint Version, string Nombre);
-public sealed record Inicio(int Sucursales, int Clientes, int Productos, long Disponibles, long Reservadas);
+public sealed record Inicio(int Sucursales, int Clientes, int Productos, long Disponibles, long Reservadas, int SucursalesNoDisponibles = 0);
 
 public sealed class Existencia
 {
     public int InventarioId { get; set; }
+    public int SucursalId { get; set; }
+    public int ProductoId { get; set; }
     public string Sucursal { get; set; } = "";
     public string Codigo { get; set; } = "";
     public string Producto { get; set; } = "";
@@ -78,6 +80,9 @@ public sealed class Existencia
 public sealed class ReservaConsulta
 {
     public int Id { get; set; }
+    public int SucursalId { get; set; }
+    public int ProductoId { get; set; }
+    public int ClienteId { get; set; }
     public string Cliente { get; set; } = "";
     public string Sucursal { get; set; } = "";
     public string Producto { get; set; } = "";

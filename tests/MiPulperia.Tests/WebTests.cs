@@ -9,7 +9,13 @@ namespace MiPulperia.Tests;
 public sealed class AppFactory : WebApplicationFactory<Program>
 {
     protected override void ConfigureWebHost(IWebHostBuilder builder) => builder.UseEnvironment("Development")
-        .ConfigureAppConfiguration((_, config) => config.AddInMemoryCollection(new Dictionary<string, string?> { ["ConnectionStrings:Pulperia"] = DatabaseTests.Connection }));
+        .ConfigureAppConfiguration((_, config) => config.AddInMemoryCollection(new Dictionary<string, string?> {
+            ["ConnectionStrings:Pulperia"] = DatabaseTests.Connection,
+            ["Procesos:BackgroundHabilitado"] = "false",
+            ["Circuitos:PermitirSimulacion"] = "true",
+            ["Circuitos:PausaSegundos"] = "1",
+            ["Procesos:ClaveProgramador"] = "clave-exclusiva-pruebas"
+        }));
 }
 public sealed class WebTests(AppFactory factory) : IClassFixture<AppFactory>
 {

@@ -1,0 +1,5 @@
+@model DetalleProducto
+@{ ViewData["Title"] = "Existencias de " + Model.Producto.Nombre; }
+<a asp-controller="Productos" asp-action="Index">← Volver a productos</a>
+<div class="page-heading"><div><p class="eyebrow">PRODUCTO Y SUS SUCURSALES</p><h1>@Model.Producto.Nombre</h1><p>@Model.Producto.Codigo · <code>@Model.Producto.Atributos</code></p></div></div>
+<partial name="_ExistenciasSucursales" model="Model.Sucursales" />

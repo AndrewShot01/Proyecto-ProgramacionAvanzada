@@ -1,0 +1,16 @@
+@model ReservaConsulta
+@{ ViewData["Title"] = "Confirmar compra"; var cr = System.Globalization.CultureInfo.GetCultureInfo("es-CR"); }
+<div class="page-heading"><div><p class="eyebrow">COMPRA</p><h1>Confirmar la compra</h1><p>Reserva @Model.Id · @Model.Cliente</p></div></div>
+<section class="form-card" data-sucursal="@Model.SucursalId">
+<h2>@Model.Producto</h2><p>@Model.Sucursal · @Model.Cantidad unidad(es)</p>
+<p>Total: <strong>@Model.Total.ToString("C", cr)</strong></p>
+<p>Vence: @Model.FechaVencimiento.AddHours(-6).ToString("dd/MM/yyyy HH:mm:ss") (Costa Rica)</p>
+<span class="circuit-message" aria-live="polite"></span>
+@if (Model.Estado == "RESERVADO" && Model.FechaVencimiento > DateTime.UtcNow)
+{
+<form method="post"><input type="hidden" name="sucursalId" value="@Model.SucursalId" /><input type="hidden" name="id" value="@Model.Id" />
+<p>Al confirmar, la reserva queda comprada y su resultado será definitivo.</p><button class="button" type="submit" data-operacion>Registrar compra</button></form>
+}
+else { <p class="alert">Esta reserva no admite compras: está finalizada o venció.</p> }
+<a class="button secondary" asp-controller="Consultas" asp-action="Reservas">Volver a reservas</a>
+</section>

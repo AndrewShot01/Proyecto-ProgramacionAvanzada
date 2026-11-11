@@ -1,0 +1,19 @@
+@model PanelSucursales
+@inject MiPulperia.Web.Services.SucursalCircuitos Circuitos
+@{ ViewData["Title"] = "Estado de sucursales"; }
+<div class="page-heading"><div><p class="eyebrow">SUCURSALES</p><h1>Estado de conexión</h1><p>Las sucursales se actualizan automáticamente al detectar una interrupción o recuperarse.</p></div></div>
+<p id="signalr-status" role="status">Conectando las actualizaciones en vivo…</p>
+<div class="branch-grid">
+@foreach (var s in Model.Sucursales)
+{
+var estado = Circuitos.Estado(s.Id);
+<section class="panel sucursal-panel @(estado.Estado != "CERRADO" ? "sucursal-inactiva" : "")" data-sucursal="@s.Id">
+<h2>@s.Nombre</h2><p>@s.Direccion</p><strong class="circuit-state">@estado.Estado</strong><p class="circuit-message" aria-live="polite">@(estado.Estado == "CERRADO" ? "" : estado.Mensaje)</p>
+@if (Model.SimulacionHabilitada)
+{
+<form asp-action="Simular" method="post"><input type="hidden" name="id" value="@s.Id" /><input type="hidden" name="segundos" value="30" />
+<button class="button secondary" type="submit">Simular caída durante 30 segundos</button></form>
+}
+</section>
+}
+</div>

@@ -1,0 +1,3 @@
+@model EstadoSucursal
+@{ ViewData["Title"] = "Sucursal temporalmente no disponible"; }
+<div class="form-card"><h1>Sucursal temporalmente no disponible</h1><p>@MiPulperia.Web.Services.SucursalCircuitos.MensajeNoDisponible</p><a class="button" asp-controller="Estado" asp-action="Index">Ver estado de sucursales</a></div>

@@ -1,7 +1,5 @@
-@model IReadOnlyList<ReservaConsulta>
-@{ ViewData["Title"] = "Reservas"; var zona = TimeZoneInfo.FindSystemTimeZoneById("America/Costa_Rica"); string Fecha(DateTime d) => TimeZoneInfo.ConvertTimeFromUtc(DateTime.SpecifyKind(d, DateTimeKind.Utc), zona).ToString("dd/MM/yyyy HH:mm"); }
-<div class="page-heading"><div><p class="eyebrow">CONSULTAS</p><h1>Reservas del barrio</h1><p class="muted">Historial de reservas, de la más reciente a la más antigua. Horario de Costa Rica.</p></div><span class="pill">Solo consulta</span></div>
-<section class="panel"><div class="table-toolbar"><form method="get" class="search-form"><label class="sr-only" for="q">Nombre del cliente</label><input id="q" name="q" value="@ViewData["Busqueda"]" placeholder="Buscar cliente…" /><button class="button secondary">Buscar</button></form><span class="count">@Model.Count reserva(s)</span></div><div class="table-scroll"><table><thead><tr><th>Cliente</th><th>Producto / sucursal</th><th>Cantidad</th><th>Total</th><th>Fechas</th><th>Resultado</th></tr></thead><tbody>
-@foreach (var x in Model) { <tr><td>@x.Cliente</td><td><strong>@x.Producto</strong><small class="cell-detail">@x.Sucursal</small></td><td>@x.Cantidad</td><td>@x.Total.ToString("C", System.Globalization.CultureInfo.GetCultureInfo("es-CR"))</td><td><small>Reserva: @Fecha(x.FechaReserva)<br />Vence: @Fecha(x.FechaVencimiento)@if (x.FechaCierre is DateTime cierre) { <br /><span>Cierre: @Fecha(cierre)</span> }</small></td><td><span class="state @x.Estado.ToLowerInvariant()">@x.Estado</span><small class="cell-detail">@(x.Estado == "COMPRADO" ? "Compra materializada" : x.Estado == "CANCELADO" ? "Venció sin compra" : "Pendiente de compra")</small></td></tr> }
-@if (Model.Count == 0) { <tr><td colspan="6" class="empty">No se encontraron reservas.</td></tr> }
-</tbody></table></div></section>
+@model ConsultaReservas
+@{ ViewData["Title"] = "Reservas"; }
+<div class="page-heading"><div><p class="eyebrow">CONSULTAS</p><h1>Reservas del barrio</h1><p>Historial de reservas, de la más reciente a la más antigua. Horario de Costa Rica.</p></div><a class="button" asp-controller="Procesos" asp-action="Reserva">+ Nueva reserva</a></div>
+<form method="get" class="search-form search-bar"><input name="q" value="@Model.Busqueda" placeholder="Buscar cliente..." aria-label="Buscar cliente" /><button class="button secondary">Buscar</button></form>
+<partial name="_ReservasSucursales" model="Model.Sucursales" />
